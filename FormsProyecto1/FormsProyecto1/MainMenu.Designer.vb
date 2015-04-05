@@ -48,7 +48,6 @@ Partial Class MainMenu
         Me.MCMainMenu = New System.Windows.Forms.MonthCalendar()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -237,22 +236,12 @@ Partial Class MainMenu
         Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
         Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(212, 77)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(900, 505)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MCMainMenu)
         Me.Controls.Add(Me.btnHolidayManagement)
         Me.Controls.Add(Me.btnCategoryManagement)
@@ -301,5 +290,4 @@ Partial Class MainMenu
     Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
     Private WithEvents MCMainMenu As System.Windows.Forms.MonthCalendar
     Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
-    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
