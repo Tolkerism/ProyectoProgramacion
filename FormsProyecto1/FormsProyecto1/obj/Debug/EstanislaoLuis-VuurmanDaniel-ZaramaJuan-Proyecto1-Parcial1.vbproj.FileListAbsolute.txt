@@ -227,3 +227,7 @@ C:\Users\Juan\Desktop\5 Abril\FormsProyecto1\FormsProyecto1\bin\Debug\Estanislao
 C:\Users\Juan\Desktop\5 Abril\FormsProyecto1\FormsProyecto1\bin\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.xml
 C:\Users\Juan\Desktop\5 Abril\FormsProyecto1\FormsProyecto1\bin\Debug\EntityFramework.dll
 C:\Users\Juan\Desktop\5 Abril\FormsProyecto1\FormsProyecto1\bin\Debug\EntityFramework.xml
+C:\Users\Luxo\Desktop\ProyectoProgramacion\FormsProyecto1\FormsProyecto1\bin\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.exe.config
+C:\Users\Luxo\Desktop\ProyectoProgramacion\FormsProyecto1\FormsProyecto1\obj\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.exe
+C:\Users\Luxo\Desktop\ProyectoProgramacion\FormsProyecto1\FormsProyecto1\obj\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.xml
+C:\Users\Luxo\Desktop\ProyectoProgramacion\FormsProyecto1\FormsProyecto1\obj\Debug\EstanislaoLuis-VuurmanDaniel-ZaramaJuan-Proyecto1-Parcial1.pdb
