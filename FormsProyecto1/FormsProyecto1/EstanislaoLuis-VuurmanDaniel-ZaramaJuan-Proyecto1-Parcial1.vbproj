@@ -114,12 +114,6 @@
     <Compile Include="Create User.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Delete User.Designer.vb">
-      <DependentUpon>Delete User.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Delete User.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="EditCategory.Designer.vb">
       <DependentUpon>EditCategory.vb</DependentUpon>
     </Compile>
@@ -130,13 +124,6 @@
       <DependentUpon>EditEntry.vb</DependentUpon>
     </Compile>
     <Compile Include="EditEntry.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HolidayBank.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HolidayBank.Designer.vb">
-      <DependentUpon>HolidayBank.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainMenu.Designer.vb">
@@ -238,17 +225,11 @@
     <EmbeddedResource Include="Create User.resx">
       <DependentUpon>Create User.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Delete User.resx">
-      <DependentUpon>Delete User.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EditCategory.resx">
       <DependentUpon>EditCategory.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditEntry.resx">
       <DependentUpon>EditEntry.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HolidayBank.resx">
-      <DependentUpon>HolidayBank.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>

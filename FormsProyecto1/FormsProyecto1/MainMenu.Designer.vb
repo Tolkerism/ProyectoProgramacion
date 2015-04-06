@@ -29,7 +29,6 @@ Partial Class MainMenu
         Me.TimeRegistrationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RequestHolidayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HolidayBankToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UserAdministrationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProyectAdministrationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -38,6 +37,7 @@ Partial Class MainMenu
         Me.MCMainMenu = New System.Windows.Forms.MonthCalendar()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.lblWelcome = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -61,7 +61,7 @@ Partial Class MainMenu
         '
         'MainMenuToolStripMenuItem
         '
-        Me.MainMenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TimeRegistrationToolStripMenuItem, Me.ProfileToolStripMenuItem, Me.RequestHolidayToolStripMenuItem, Me.HolidayBankToolStripMenuItem, Me.UserAdministrationToolStripMenuItem, Me.ProyectAdministrationToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.CategoryManagementToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.MainMenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TimeRegistrationToolStripMenuItem, Me.ProfileToolStripMenuItem, Me.RequestHolidayToolStripMenuItem, Me.UserAdministrationToolStripMenuItem, Me.ProyectAdministrationToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.CategoryManagementToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
         Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
         Me.MainMenuToolStripMenuItem.Text = "Main Menu"
@@ -83,12 +83,6 @@ Partial Class MainMenu
         Me.RequestHolidayToolStripMenuItem.Name = "RequestHolidayToolStripMenuItem"
         Me.RequestHolidayToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
         Me.RequestHolidayToolStripMenuItem.Text = "Request Holiday"
-        '
-        'HolidayBankToolStripMenuItem
-        '
-        Me.HolidayBankToolStripMenuItem.Name = "HolidayBankToolStripMenuItem"
-        Me.HolidayBankToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
-        Me.HolidayBankToolStripMenuItem.Text = "Holiday Bank"
         '
         'UserAdministrationToolStripMenuItem
         '
@@ -124,7 +118,7 @@ Partial Class MainMenu
         '
         Me.MCMainMenu.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.MCMainMenu.CalendarDimensions = New System.Drawing.Size(2, 2)
-        Me.MCMainMenu.Location = New System.Drawing.Point(291, 107)
+        Me.MCMainMenu.Location = New System.Drawing.Point(234, 94)
         Me.MCMainMenu.Name = "MCMainMenu"
         Me.MCMainMenu.TabIndex = 14
         '
@@ -139,12 +133,23 @@ Partial Class MainMenu
         Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
         Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
         '
+        'lblWelcome
+        '
+        Me.lblWelcome.AutoSize = True
+        Me.lblWelcome.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWelcome.Location = New System.Drawing.Point(356, 40)
+        Me.lblWelcome.Name = "lblWelcome"
+        Me.lblWelcome.Size = New System.Drawing.Size(192, 20)
+        Me.lblWelcome.TabIndex = 15
+        Me.lblWelcome.Text = "¡Welcome to Clessidra!"
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(900, 505)
+        Me.Controls.Add(Me.lblWelcome)
         Me.Controls.Add(Me.MCMainMenu)
         Me.Controls.Add(Me.btnExitForFather)
         Me.Controls.Add(Me.MenuStrip1)
@@ -168,10 +173,10 @@ Partial Class MainMenu
     Friend WithEvents TimeRegistrationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProfileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RequestHolidayToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents HolidayBankToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents UserAdministrationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProyectAdministrationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReportsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CategoryManagementToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents lblWelcome As System.Windows.Forms.Label
 End Class

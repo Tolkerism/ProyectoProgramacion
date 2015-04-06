@@ -119,4 +119,8 @@ Public Class RequestHolidays
     Private Sub ReturnToMainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReturnToMainMenuToolStripMenuItem.Click
         Me.Close()
     End Sub
+
+    Private Sub dtpStartHoliday_ValueChanged(sender As Object, e As EventArgs) Handles dtpStartHoliday.ValueChanged
+
+    End Sub
 End Class

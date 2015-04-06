@@ -16,8 +16,8 @@ Public Class MainMenu
     End Sub
 
     Public userType As Integer = 0
-    'Dim strConexion As String = "Data Source=localhost;Integrated Security=True"
-    Dim strConexion As String = "Data Source=(LocalDB)\v11.0;Initial Catalog=Clessidra;Integrated Security=True"
+    Dim strConexion As String = "Data Source=localhost;Integrated Security=True"
+    'Dim strConexion As String = "Data Source=(LocalDB)\v11.0;Initial Catalog=Clessidra;Integrated Security=True"
     Dim connection As New SqlConnection(strConexion)
     Dim dataTableUser As New DataTable
     Dim dataTableRole As New DataTable
@@ -201,7 +201,9 @@ Public Class MainMenu
 
 
     Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        userType = 0
+        MCMainMenu.MinDate = Today
+
+
         Select Case userType
 
             Case 0
@@ -251,14 +253,6 @@ Public Class MainMenu
     End Sub
 
     
-
-    Private Sub HolidayBankToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HolidayBankToolStripMenuItem.Click
-        Dim HB As New BankHoliday()
-
-        HB.Show()
-    End Sub
-
-    
     Private Sub UserAdministrationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UserAdministrationToolStripMenuItem.Click
         Dim UA As New UserAdministration()
 
@@ -284,4 +278,9 @@ Public Class MainMenu
 
         categoryManagement.Show()
     End Sub
+
+    Private Sub btnExitForFather_Click(sender As Object, e As EventArgs) Handles btnExitForFather.Click
+
+    End Sub
+
 End Class
