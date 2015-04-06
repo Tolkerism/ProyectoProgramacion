@@ -16,7 +16,8 @@ Public Class MainMenu
     End Sub
 
     Public userType As Integer = 0
-    Dim strConexion As String = "Data Source=localhost;Integrated Security=True"
+    'Dim strConexion As String = "Data Source=localhost;Integrated Security=True"
+    Dim strConexion As String = "Data Source=(LocalDB)\v11.0;Initial Catalog=Clessidra;Integrated Security=True"
     Dim connection As New SqlConnection(strConexion)
     Dim dataTableUser As New DataTable
     Dim dataTableRole As New DataTable
@@ -200,83 +201,87 @@ Public Class MainMenu
 
 
     Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        userType = 0
         Select Case userType
+
             Case 0
-                btnUserAdministration.Hide()
-                btnProyectAdministration.Hide()
-                btnReports.Hide()
-                btnCategoryManagement.Hide()
-                '    btnExistForAdmin.Hide()
-                btnExitForFather.Hide()
+                UserAdministrationToolStripMenuItem.Visible = False
+                ProyectAdministrationToolStripMenuItem.Visible = False
+                ReportsToolStripMenuItem.Visible = False
+                CategoryManagementToolStripMenuItem.Visible = False
+
             Case 1
-                '    btnExitForUser.Hide()
-                btnCategoryManagement.Hide()
-                btnExitForFather.Hide()
+
+                CategoryManagementToolStripMenuItem.Visible = False
 
             Case 2
 
-                '  btnExistForAdmin.Hide()
-                '    btnExitForUser.Hide()
+               
         End Select
 
-
-
-
     End Sub
 
-    Private Sub btnCategoryManagement_Click(sender As Object, e As EventArgs) Handles btnCategoryManagement.Click
 
-        Dim categoryManagement As Category_Management = New Category_Management()
-        categoryManagement.Show()
+  
 
-
-    End Sub
-
-    Private Sub btnTimeRegistration_Click(sender As Object, e As EventArgs) Handles btnTimeRegistration.Click
+  
 
 
+   
+
+ 
+
+    
+    Private Sub TimeRegistrationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TimeRegistrationToolStripMenuItem.Click
         Dim timeRegistration As New Time_Registration()
+
         timeRegistration.Show()
-
     End Sub
 
-    Private Sub btnProyectAdministration_Click(sender As Object, e As EventArgs) Handles btnProyectAdministration.Click
-
-        Dim PA As New txt_project_name(Me)
-        PA.Show()
-        '  Me.Hide()
-
-
-    End Sub
-
-    Private Sub btnUserAdministration_Click(sender As Object, e As EventArgs) Handles btnUserAdministration.Click
-
-        Dim UA As New UserAdministration()
-
-        UA.Show()
-
-        '  Me.Hide()
-    End Sub
-
-    Private Sub btnProfile_Click(sender As Object, e As EventArgs) Handles btnProfile.Click
-
+    Private Sub ProfileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfileToolStripMenuItem.Click
         Dim UP As New UserProfile()
 
         UP.Show()
-
-
     End Sub
 
-    Private Sub btnHolidayRequest_Click(sender As Object, e As EventArgs) Handles btnHolidayRequest.Click
-
+    Private Sub RequestHolidayToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RequestHolidayToolStripMenuItem.Click
         Dim RQ As New RequestHolidays()
 
         RQ.Show()
-
-
-
     End Sub
 
     
+
+    Private Sub HolidayBankToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HolidayBankToolStripMenuItem.Click
+        Dim HB As New BankHoliday()
+
+        HB.Show()
+    End Sub
+
+    
+    Private Sub UserAdministrationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UserAdministrationToolStripMenuItem.Click
+        Dim UA As New UserAdministration()
+
+        UA.Show()
+    End Sub
+
+    Private Sub ProyectAdministrationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProyectAdministrationToolStripMenuItem.Click
+        Dim PA As New txt_project_name(Me)
+
+        PA.Show()
+    End Sub
+
+  
+   
+    Private Sub ReportsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportsToolStripMenuItem.Click
+        Dim Rprts As New Reports()
+
+        Rprts.Show()
+    End Sub
+
+    Private Sub CategoryManagementToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CategoryManagementToolStripMenuItem.Click
+        Dim categoryManagement As Category_Management = New Category_Management()
+
+        categoryManagement.Show()
+    End Sub
 End Class

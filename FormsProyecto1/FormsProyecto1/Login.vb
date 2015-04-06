@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Login
-
+    ' Dim strConexion As String = "Data Source=(LocalDB)\v11.0;Initial Catalog=Clessidra;Integrated Security=True"
     Dim strConexion As String = "Data Source=localhost;Integrated Security=True"
     Dim connection As New SqlConnection(strConexion)
 
