@@ -201,8 +201,9 @@ Public Class MainMenu
 
 
     Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        userType = 0
-        Select Case userType
+
+        Select Case currentGlobalRole
+
 
             Case 0
                 UserAdministrationToolStripMenuItem.Visible = False
@@ -216,7 +217,7 @@ Public Class MainMenu
 
             Case 2
 
-               
+
         End Select
 
     End Sub
